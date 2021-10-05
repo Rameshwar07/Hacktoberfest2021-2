@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a,b,r,hcf,lcm;
+    cin>>a>>b;
+    
+    int x=a;
+    int y=b;
+    
+    while(true)
+    {
+        lcm=a;
+        r=a%b;
+        if(r==0)
+        {
+            break;
+        }
+        a=a*2;
+    }
+    
+    hcf=x*y/lcm;
+    
+    cout<<"HCF is "<<hcf<<endl;
+    cout<<"LCM is "<<lcm<<endl;
+    
+    return 0;
+}
